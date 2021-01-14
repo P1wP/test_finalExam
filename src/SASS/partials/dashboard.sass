@@ -1,0 +1,84 @@
+#dashboardPage
+    background: $darkGray
+    min-height: 100vh
+    width: 100%
+    position: absolute
+    top: 0
+    
+.dashboard
+    margin: 150px auto auto auto
+    
+    
+    
+.messages, .enquiries, .establishments
+    // BTN
+    width: 100%
+    border: 1px solid $white
+    padding: 10px
+    cursor: pointer
+    &__btn
+        display: flex
+        border-bottom: 1px solid $white
+        &--text
+            text-align: left
+            width: 80%
+            color: $white
+        &--icon
+            
+        &--openClose
+            font-size: 44px  
+            color: $purple
+             
+        
+
+    // LIST
+    &__list
+        max-height: 500px
+        overflow: hidden
+        overflow-y: scroll
+        border: 1px solid $white
+       
+        &--info
+            display: flex
+            
+            &--from
+                width: 50%
+                font-size: 1.5rem
+                text-align: center
+                color: $white
+            &--email
+                text-align: center
+                width: 50%
+                color: $white
+                font-size: 1.5rem
+        &--item
+            display: flex
+            border-top: 1px solid $purple
+            padding: 5px
+            margin: 5px
+            cursor: pointer
+            color: $white
+            font-size: 1.2rem
+            &--name
+                width: 100%
+            &--time
+                width: 100%
+                text-align: right
+            &--email
+                text-align: right
+            &--id
+                text-align: right
+            &--icon
+                font-size: 44px
+                &:hover
+                    color: $purple
+            &:hover
+                background: #4d4b4b
+                color: #ffffff
+
+   
+
+
+    // IF ERROR DELETE!
+.establishments
+    margin-bottom: 10px

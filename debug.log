@@ -1,0 +1,11 @@
+[0501/133634.368:ERROR:process_info.cc(329)] VirtualQueryEx: Ingen tilgang. (0x5)
+[0501/133634.370:ERROR:process_info.cc(556)] ReadMemoryInfo failed
+[0501/133634.370:ERROR:process_memory_win.cc(39)] Failed to initialize ProcessInfo.
+[0501/133634.370:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: Forsøkte å få tilgang til en avsluttende prosess. (0xc000010a)
+[0607/230753.233:ERROR:process_reader_win.cc(151)] SuspendThread: Ingen tilgang. (0x5)
+[0607/230753.235:ERROR:exception_snapshot_win.cc(98)] thread ID 14696 not found in process
+[0607/230753.235:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: Forsøkte å få tilgang til en avsluttende prosess. (0xc000010a)
+[0608/001658.803:ERROR:process_info.cc(329)] VirtualQueryEx: Ingen tilgang. (0x5)
+[0608/001658.803:ERROR:process_info.cc(556)] ReadMemoryInfo failed
+[0608/001658.804:ERROR:process_memory_win.cc(39)] Failed to initialize ProcessInfo.
+[0608/001658.804:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: Forsøkte å få tilgang til en avsluttende prosess. (0xc000010a)

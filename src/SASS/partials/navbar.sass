@@ -1,0 +1,89 @@
+.navbar
+    z-index: 10
+    max-height: 100px
+    width: 100%
+    padding-left: 0
+    padding-right: 0
+    position: absolute
+    background-color: rgba(0, 0, 0, .3)
+    top: 0
+    left: 0
+    &__btn
+        &--link
+            font-size: 1.5rem
+            color: $white !important
+            transition: .5s
+            padding-bottom: 0
+            &.active
+                //color: black !important
+                border-bottom: 2px solid $purple
+                padding-bottom: 0
+
+    &__logo
+        &--img
+            background-image: url('../../images/logo/logoWhite.svg')
+            background-position: center
+            background-repeat: no-repeat
+            background-size: contain
+            height: 80px
+            width: 100%
+            min-width: 150px
+            transition: .5s
+    &__hamburger
+        color: $purple
+        font-size: 2.2rem
+    &-collapse
+        width: 100%
+        z-index: 10
+    &__admin
+        color: $white
+    
+
+
+    &:hover 
+        background-color: $gray
+        transition: 1s
+
+        .navbar__admin
+            color: $purple
+        .navbar__logo
+            &--img
+                background-image: url('../../images/logo/logoColor.svg')
+                transition: 1s
+        .navbar__btn
+            &--link
+                color: $purple !important
+                margin-right: 15px
+                transition: 1s
+                &:hover
+                    color: #ffffff !important
+                    border-bottom: 2px solid $purple
+                &.active
+                    color: $white !important
+                    
+// MEDIA QUERIy
+@media screen and ( max-width: 992px  )
+    .navbar
+        padding: 0
+        &-collapse
+            background:  inherit
+            padding-bottom: 10px
+        &__logo  
+            padding-bottom: 0
+            margin-bottom: 0
+        &__btn
+            &--link
+                &.active
+                    //color: black !important
+                    border-bottom: none
+                    
+        &:hover
+            .navbar__btn
+                &--link
+                    &:hover
+                        border: none
+                    &.active
+                        //color: $purple !important
+            
+
+    
