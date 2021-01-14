@@ -13,7 +13,8 @@ function Details(){
 
     const [ hotel, setHotel ] = useState([]);
     const [loading, setLoading] = useState(true);
-    const hotels = JSON.parse(localStorage.getItem("hotelsTWO"));
+    const hotels = [];
+    hotels.push(JSON.parse(localStorage.getItem("hotelsTWO")));
    
     
      // GET ID FROM URL
